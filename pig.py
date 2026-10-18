@@ -33,7 +33,9 @@ class PigGame:
             print(f"Total score: {player.score}")
 
             while True:
-                print(f"Turn total: {turn_total}")
+                print(f"\n{player.name}'s score: {player.score}")
+                print(f"Current turn total: {turn_total}")
+                print(f"Potential score: {player.score + turn_total}")
                 choice = input("Roll (r) or Hold (h)? ").lower()
 
                 if choice == "r":
